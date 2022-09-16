@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         (sub-header font)
       </p>
       <p className="mt-10 text-lg font-sans text-neutral-50 md:text-2xl">
-        This is a font for chunks of wrinting that will look good small.
+        This is a font for chunks of writing that will look good small.
       </p>
       <p className="text-lg font-sans text-neutral-50 md:text-2xl">
         (body font)
