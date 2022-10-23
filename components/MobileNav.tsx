@@ -9,6 +9,7 @@ const MobileNav = () => {
           src="/images/tattoo-logo-2.PNG"
           width={64}
           height={64}
+          priority
         />
       </a>
       <svg
