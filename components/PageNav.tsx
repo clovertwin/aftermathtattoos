@@ -14,15 +14,21 @@ const PageNav = () => {
       </a>
       <a
         href="#"
-        className="text-3xl font-serif text-neutral-100 mt-14 mb-10 transition ease-in-out duration-300 hover:scale-110"
+        className="text-5xl text-neutral-100 mt-14 transition ease-in-out duration-300 hover:scale-110"
       >
         Gallery
       </a>
       <a
         href="#"
-        className="text-3xl font-serif text-neutral-100 transition ease-in-out duration-300 hover:scale-110"
+        className="text-5xl text-neutral-100 mt-10 transition ease-in-out duration-300 hover:scale-110"
       >
         Book Now
+      </a>
+      <a
+        href="#"
+        className="text-5xl text-neutral-100 mt-10 transition ease-in-out duration-300 hover:scale-110"
+      >
+        FAQ
       </a>
     </div>
   );

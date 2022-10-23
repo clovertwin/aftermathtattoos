@@ -14,8 +14,7 @@ module.exports = {
       },
       fontFamily: {
         header: ["Almendra Display", "cursive"],
-        serif: ["EB Garamond", ...defaultTheme.fontFamily.serif],
-        sans: ["Quicksand", ...defaultTheme.fontFamily.sans],
+        sans: ["Archivo", ...defaultTheme.fontFamily.sans],
       },
     },
   },
