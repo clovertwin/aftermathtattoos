@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        statue: "url('/images/background.jpg')",
+        largeLogo: "url('/images/tattoo-logo-lg-copy.jpg')",
       },
       fontFamily: {
         header: ["Almendra Display", "cursive"],
