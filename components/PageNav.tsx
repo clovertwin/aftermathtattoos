@@ -18,7 +18,7 @@ const PageNav = () => {
       <Link href="/#gallery">
         <a
           aria-label="link to photo gallery"
-          className="text-5xl text-neutral-100 mt-14 transition ease-in-out duration-300 hover:scale-110"
+          className="text-4xl font-bold text-neutral-100 mt-14 transition ease-in-out duration-300 hover:ring hover:ring-neutral-100 hover:scale-110"
         >
           Gallery
         </a>
@@ -26,7 +26,7 @@ const PageNav = () => {
       <Link href="/#booking">
         <a
           aria-label="link to booking"
-          className="text-5xl text-neutral-100 mt-10 transition ease-in-out duration-300 hover:scale-110"
+          className="text-4xl font-bold text-neutral-100 mt-10 transition ease-in-out duration-300 hover:ring hover:ring-neutral-100 hover:scale-110"
         >
           Book Now
         </a>
@@ -34,7 +34,7 @@ const PageNav = () => {
       <Link href="/#faq">
         <a
           aria-label="link to frequently asked questions"
-          className="text-5xl text-neutral-100 mt-10 transition ease-in-out duration-300 hover:scale-110"
+          className="text-4xl font-bold text-neutral-100 mt-10 transition ease-in-out duration-300 hover:ring hover:ring-neutral-100 hover:scale-110"
         >
           FAQ
         </a>
