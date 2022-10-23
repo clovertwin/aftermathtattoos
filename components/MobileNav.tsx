@@ -47,34 +47,44 @@ const MobileNav = () => {
               />
             </svg>
           </Popover.Button>
-          <Popover.Panel className="z-30 mt-1 mr-1 absolute right-0 w-3/4 max-w-xs">
-            <div className="flex flex-col justify-center bg-neutral-900 ring ring-neutral-100 rounded-lg mt-2 p-10">
-              <Link href="/#gallery">
-                <a
-                  aria-label="link to photo gallery"
-                  className="text-2xl font-bold text-neutral-100"
-                >
-                  Gallery
-                </a>
-              </Link>
-              <Link href="/#booking">
-                <a
-                  aria-label="link to booking"
-                  className="text-2xl font-bold text-neutral-100 mt-5"
-                >
-                  Book Now
-                </a>
-              </Link>
-              <Link href="/#faq">
-                <a
-                  aria-label="link to frequently asked questions"
-                  className="text-2xl font-bold text-neutral-100 mt-5"
-                >
-                  FAQ
-                </a>
-              </Link>
-            </div>
-          </Popover.Panel>
+          <Transition
+            as={Fragment}
+            enter="transition ease-out duration-200"
+            enterFrom="opacity-0 translate-y-1"
+            enterTo="opacity-100 translate-y-0"
+            leave="transition ease-in duration-150"
+            leaveFrom="opacity-100 translate-y-0"
+            leaveTo="opacity-0 translate-y-1"
+          >
+            <Popover.Panel className="z-30 mt-1 mr-1 absolute right-0 w-3/4 max-w-xs">
+              <div className="flex flex-col justify-center items-center bg-neutral-900 ring ring-neutral-100 rounded-lg mt-2 p-10">
+                <Link href="/#gallery">
+                  <a
+                    aria-label="link to photo gallery"
+                    className="text-2xl font-bold text-neutral-100"
+                  >
+                    Gallery
+                  </a>
+                </Link>
+                <Link href="/#booking">
+                  <a
+                    aria-label="link to booking"
+                    className="text-2xl font-bold text-neutral-100 mt-5"
+                  >
+                    Book Now
+                  </a>
+                </Link>
+                <Link href="/#faq">
+                  <a
+                    aria-label="link to frequently asked questions"
+                    className="text-2xl font-bold text-neutral-100 mt-5"
+                  >
+                    FAQ
+                  </a>
+                </Link>
+              </div>
+            </Popover.Panel>
+          </Transition>
         </Popover>
       </div>
     </header>
