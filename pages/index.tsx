@@ -1,30 +1,16 @@
 import type { NextPage } from "next";
+import Hero from "../components/Hero";
+import Gallery from "../components/Gallery";
+import Booking from "../components/Booking";
+import Faq from "../components/Faq";
 
 const Home: NextPage = () => {
   return (
     <>
-      <div className="flex flex-col px-4 font-header text-6xl text-neutral-100 bg-neutral-900 font-bold justify-center items-center h-[93vh] sm:text-8xl md:h-screen md:ml-80 lg:text-9xl">
-        <p>Aftermath</p>
-        <p>Tattoos</p>
-      </div>
-      <div
-        id="gallery"
-        className="h-screen flex flex-wrap flex-col items-center justify-center text-3xl font-black bg-neutral-300 text-neutral-900 border-b-4 border-neutral-900 md:ml-80"
-      >
-        Photos Section 📸
-      </div>
-      <div
-        id="booking"
-        className="h-screen flex flex-col items-center justify-center text-3xl font-black bg-neutral-300 text-neutral-900 border-b-4 border-neutral-900 md:ml-80"
-      >
-        Booking Section 🗒
-      </div>
-      <div
-        id="faq"
-        className="h-screen flex flex-col items-center justify-center text-3xl font-black bg-neutral-300 text-neutral-900 md:ml-80"
-      >
-        FAQ Section 🙋
-      </div>
+      <Hero />
+      <Gallery />
+      <Booking />
+      <Faq />
     </>
   );
 };

@@ -3,14 +3,14 @@ import Link from "next/link";
 
 const PageNav = () => {
   return (
-    <div className="hidden md:bg-neutral-900 md:py-3 md:px-7 md:fixed md:h-full md:flex md:flex-col md:w-80 md:items-center md:justify-center md:border-r-2 md:border-neutral-100">
+    <header className="hidden md:bg-neutral-900 md:py-3 md:px-7 md:fixed md:h-full md:flex md:flex-col md:w-80 md:items-center md:justify-center md:border-r-2 md:border-neutral-100">
       <Link href="/">
         <a aria-label="link to home">
           <Image
             alt="aftermath logo large"
             src="/images/tattoo-logo-2.PNG"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
             priority
           />
         </a>
@@ -39,7 +39,7 @@ const PageNav = () => {
           FAQ
         </a>
       </Link>
-    </div>
+    </header>
   );
 };
 
