@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const MobileNav = () => {
   return (
-    <div className="flex flex-wrap sticky top-0 z-20 w-full items-center justify-between border-b-4 border-neutral-100 px-5 bg-neutral-900 md:hidden">
+    <div className="flex flex-wrap sticky top-0 z-20 items-center justify-between px-5 bg-neutral-900 md:hidden">
       <a href="#" className="h-16 w-16">
         <Image
           alt="aftermath small logo"
