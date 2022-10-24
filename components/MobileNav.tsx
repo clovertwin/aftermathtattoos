@@ -5,7 +5,7 @@ import { Popover, Transition } from "@headlessui/react";
 
 const MobileNav = () => {
   return (
-    <header className="sticky top-0 z-30 px-5 bg-neutral-900 bg-opacity-70 backdrop-blur md:hidden">
+    <header className="sticky top-0 z-30 px-5 bg-neutral-900 md:hidden">
       <div className="flex flex-wrap items-center justify-between">
         <a href="#" className="h-16 w-16">
           <Image
