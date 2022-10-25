@@ -16,7 +16,7 @@ const Gallery = ({ images }: Props) => {
           Gallery
         </h2>
       </div>
-      <div className="px-4 py-12 bg-neutral-900 grid grid-cols-2 auto-rows-auto gap-x-5 gap-y-12 sm:grid-cols-3 md:grid-cols-2 xl:grid-cols-3">
+      <div className="px-4 py-6 bg-neutral-900 grid grid-cols-2 auto-rows-auto gap-5 sm:gap-x-5 sm:gap-y-12 sm:py-12 sm:grid-cols-3 md:grid-cols-2 xl:grid-cols-3">
         {images.map((image) => {
           return <GalleryImage key={image.alt} {...image} />;
         })}
