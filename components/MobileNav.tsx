@@ -7,15 +7,17 @@ const MobileNav = () => {
   return (
     <header className="sticky top-0 z-30 px-5 bg-neutral-900 md:hidden">
       <div className="flex flex-wrap items-center justify-between">
-        <a href="#" className="h-16 w-16">
-          <Image
-            alt="aftermath small logo"
-            src="/images/tattoo-logo-2.PNG"
-            width={64}
-            height={64}
-            priority
-          />
-        </a>
+        <Link href="/" className="h-16 w-16">
+          <a aria-label="link to home">
+            <Image
+              alt="aftermath small logo"
+              src="/images/tattoo-logo-2.PNG"
+              width={64}
+              height={64}
+              priority
+            />
+          </a>
+        </Link>
         <Popover className="h-[40px] w-[40px]">
           <Popover.Button className="focus:outline-none focus:ring focus:ring-neutral-100 active:ring active:ring-neutral-100">
             <svg
@@ -58,10 +60,18 @@ const MobileNav = () => {
           >
             <Popover.Panel className="z-30 mt-1 mr-1 absolute right-0 w-3/4 max-w-xs">
               <div className="flex flex-col justify-center items-center bg-neutral-900 ring ring-neutral-100 rounded-lg mt-2 p-10">
+                <Link href="/">
+                  <a
+                    aria-label="link to home"
+                    className="text-2xl font-bold text-neutral-100"
+                  >
+                    Home
+                  </a>
+                </Link>
                 <Link href="/#gallery">
                   <a
                     aria-label="link to photo gallery"
-                    className="text-2xl font-bold text-neutral-100"
+                    className="text-2xl font-bold text-neutral-100 mt-5"
                   >
                     Gallery
                   </a>

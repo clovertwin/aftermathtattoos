@@ -1,27 +1,34 @@
-import type { NextPage } from "next";
+import type { GetServerSideProps } from "next";
+import { sanityClient } from "../lib/client";
 import Hero from "../components/Hero";
 import Gallery from "../components/Gallery";
 import Booking from "../components/Booking";
 import Faq from "../components/Faq";
+import { ImageType } from "../lib/typings";
 
-const GALLERY_IMAGES = [
-  { alt: "tattoo picture 1", path: "/images/tattoo1.jpg" },
-  { alt: "tattoo picture 2", path: "/images/tattoo2.jpg" },
-  { alt: "tattoo picture 3", path: "/images/tattoo3.jpg" },
-  { alt: "tattoo picture 4", path: "/images/tattoo4.jpg" },
-  { alt: "tattoo picture 5", path: "/images/tattoo5.jpg" },
-  { alt: "tattoo picture 6", path: "/images/tattoo6.jpg" },
-];
+interface Props {
+  images: ImageType[];
+}
 
-const Home: NextPage = () => {
+const Home = ({ images }: Props) => {
   return (
     <>
       <Hero />
-      <Gallery images={GALLERY_IMAGES} />
+      <Gallery images={images} />
       <Booking />
       <Faq />
     </>
   );
+};
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  const query = "*[_type == 'gallery']";
+  const images = await sanityClient.fetch(query);
+  return {
+    props: {
+      images,
+    },
+  };
 };
 
 export default Home;

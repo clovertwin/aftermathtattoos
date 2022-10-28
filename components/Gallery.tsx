@@ -1,8 +1,8 @@
-import { TattooImg } from "../lib/types";
+import { ImageType } from "../lib/typings";
 import GalleryImage from "./GalleryImage";
 
 interface Props {
-  images: TattooImg[];
+  images: ImageType[];
 }
 
 const Gallery = ({ images }: Props) => {
@@ -18,7 +18,7 @@ const Gallery = ({ images }: Props) => {
       </div>
       <div className="px-4 py-6 bg-neutral-900 grid grid-cols-2 auto-rows-auto gap-5 sm:gap-x-5 sm:gap-y-12 sm:py-12 sm:grid-cols-3 md:grid-cols-2 xl:grid-cols-3">
         {images.map((image) => {
-          return <GalleryImage key={image.alt} {...image} />;
+          return <GalleryImage key={image._id} {...image} />;
         })}
       </div>
     </section>
