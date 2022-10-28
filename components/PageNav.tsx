@@ -8,7 +8,7 @@ const PageNav = () => {
         <a aria-label="link to home">
           <Image
             alt="aftermath logo large"
-            src="/images/tattoo-logo-2.PNG"
+            src="/images/tattoo-logo1.PNG"
             width={150}
             height={150}
             priority
