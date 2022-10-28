@@ -2,7 +2,6 @@ import { Fragment } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Popover, Transition } from "@headlessui/react";
-import logo from "../public/images/tattoo-logo-2.png";
 
 const MobileNav = () => {
   return (
@@ -12,7 +11,7 @@ const MobileNav = () => {
           <a aria-label="link to home">
             <Image
               alt="aftermath small logo"
-              src={logo}
+              src="/images/tattoo-logo-2.png"
               width={64}
               height={64}
               priority
