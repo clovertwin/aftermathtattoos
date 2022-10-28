@@ -11,7 +11,7 @@ const MobileNav = () => {
           <a aria-label="link to home">
             <Image
               alt="aftermath small logo"
-              src="/images/tattoo-logo-2.png"
+              src="/images/tattoo-logo-2.PNG"
               width={64}
               height={64}
               priority
