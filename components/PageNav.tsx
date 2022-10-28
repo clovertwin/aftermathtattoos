@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import logo from "../public/images/tattoo-logo-2.png";
 
 const PageNav = () => {
   return (
@@ -8,7 +9,7 @@ const PageNav = () => {
         <a aria-label="link to home">
           <Image
             alt="aftermath logo large"
-            src="/images/tattoo-logo-2.PNG"
+            src={logo}
             width={150}
             height={150}
             priority
