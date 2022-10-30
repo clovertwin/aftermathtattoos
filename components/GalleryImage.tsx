@@ -17,7 +17,7 @@ const GalleryImage = (props: ImageType) => {
     <>
       <div
         onClick={openModal}
-        className="relative rounded-lg border-2 border-neutral-100 w-full max-w-[200px] h-[230px] bg-neutral-900 overflow-hidden justify-self-center lg:max-w-[300px] lg:h-[370px] focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-100 focus-visible:ring-opacity-75"
+        className="relative rounded-lg border-2 border-neutral-100 w-full max-w-[200px] h-[230px] bg-neutral-900 overflow-hidden justify-self-center lg:max-w-[300px] lg:h-[370px] focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-100 focus-visible:ring-opacity-75 hover:cursor-pointer"
       >
         <Image
           alt={props.name}
