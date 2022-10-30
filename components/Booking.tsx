@@ -9,7 +9,7 @@ const Booking = () => {
           Booking
         </h2>
       </div>
-      <div className="grid grid-cols-1 bg-neutral-100 h-[95%] px-12 lg:grid-cols-2">
+      <div className="grid grid-cols-1 bg-neutral-100 h-[95%] sm:px-12 lg:grid-cols-2">
         <div className="flex flex-col items-center justify-center text-neutral-900 font-bold h-full">
           <h3 className="text-6xl font-header md:text-7xl lg:text-8xl">
             Schedule
