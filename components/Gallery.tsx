@@ -45,12 +45,14 @@ const Gallery = ({ images }: Props) => {
           return <GalleryImage key={image._id} {...image} />;
         })}
       </div>
-      <p
-        className="mt-10 text-center text-3xl text-neutral-100 hover:cursor-pointer"
-        onClick={loadMore}
-      >
-        Load More...
-      </p>
+      <div className="flex justify-center">
+        <button
+          className="mt-3 border-b-2 border-neutral-100 text-2xl text-neutral-100 transition ease-in-out duration-300 lg:text-3xl hover:cursor-pointer hover:scale-110"
+          onClick={loadMore}
+        >
+          See More...
+        </button>
+      </div>
     </section>
   );
 };
